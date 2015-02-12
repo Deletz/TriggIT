@@ -1,0 +1,26 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+
+    <CheckBoxPreference
+        android:key="bluetooth"
+        android:title="@string/bluetooth"
+        android:defaultValue="false" />
+
+    <CheckBoxPreference
+        android:key="sync"
+        android:title="@string/sync"
+        android:defaultValue="false" />
+
+    <de.triggit.android.triggit.ui.SeekBarPreference
+        android:defaultValue="50"
+        android:dialogMessage="@string/brightness_dialog_message"
+        android:key="brightness"
+        android:max="100"
+        android:summary="@string/brightness_summary"
+        android:text="@string/brightness_text"
+        android:title="@string/brightness_title" />
+
+</PreferenceScreen>
